@@ -1,3 +1,4 @@
+/*general*/
 body{
 	font-family: "PT Sans Narrow";
 	font-weight: bold;
@@ -5,13 +6,285 @@ body{
 	color: #000000;
 	line-height: 24px;
 	text-transform: uppercase;
+	padding:0;
+	margin:0;
 }
-
 h2{
+	margin-top:0px; /*почему нужно задавать здесь 0 отдельно, если не задать - поялвяется сверху отступ, откуда он берется?*/
 	font-size: 30px;
 	line-height: normal;
 }
 h3{
 	font-size: 24px;
 	line-height: normal;
+	margin-top:0;
+	margin-bottom:0;
 }
+
+.container{
+	width: 940px;
+	margin: auto; 
+}
+.clearfix{
+	content:'';
+	display: table;
+	clear: both;
+}
+
+/*main-header*/
+.main-header{
+	font-size: 16px;
+	padding: 20px 0;
+	margin-bottom: 55px;
+}
+.main-navigation{
+	float: left;
+	width: 680px;
+}
+.main-navigation ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.main-navigation li{
+	display: inline-block;
+	margin-right: 20px;
+	margin-left:20px;
+}
+.user-block{
+	float: right;
+	padding-right: 20px;
+	width: 68px;
+	text-align: right;
+}
+
+/*main-footer*/
+.main-footer{
+	padding-top:60px;
+	padding-bottom:40px;
+	margin-top:30px;
+}
+.footer-contacts {
+	float:left;
+	margin-right: 90px;
+	width: 310px;
+}
+.footer-social{
+	float:left;
+	text-align:center;
+	width: 140px;
+	
+}
+.footer-copyright{
+	float:right;
+	width:140px;
+	text-align:center;
+}
+
+/*________________________*/
+/*barbershop-index*/
+/*logo*/
+.logo{
+	width: 380px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+/*features*/
+.features-row{
+	margin-bottom: 80px;
+}
+.features-item{
+	width: 300px;
+	float:left;
+	text-align: center;
+	margin-right:20px;
+}
+.features-item:last-child{
+	margin-right:0;
+}
+/*index-content*/
+.index-content{
+	margin-bottom:34px;
+	padding:55px 80px;
+}
+.content-column-left{
+	float:left;
+	width: 325px;
+	padding-right:65px;
+}
+.content-column-right{
+	float:right;
+	width: 325px;
+	padding-righ: 65px;
+}
+ul.news-preview{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+/*________________________*/
+/*barbershop-shop*/
+
+/*breadcrumbs*/
+.breadcrumbs{
+	margin-bottom: 60px;
+}
+.breadcrumbs ul{
+	padding:0;
+	margin:0;
+}
+.breadcrumbs li{
+	display:inline-block;
+	margin-right: 40px;
+}
+
+/*main container*/
+/*form*/
+.choice {
+float: left;
+width:220px;
+margin-right: 20px;
+}
+fieldset{
+	padding:0;
+	border: none;
+	margin-bottom: 20px;
+}
+label{
+	display:block;
+	margin-bottom: 20px;
+}
+/*catalog*/
+.catalog-items{
+	float:right;
+	width:700px;
+
+}
+.catalog-item{
+	float:left;
+	margin-right: 20px; 
+	margin-bottom: 20px;
+}
+.catalog-item:nth-child(3n){
+	margin-right: 0;
+}
+.title-item a{
+	text-decoration: none;
+	color: #000000;
+}
+.title-item span{
+	display:block;
+}
+.buy-item{
+	text-align: center;
+}
+.price, .btn-buy{
+	display: inline-block;
+}
+.paginator{
+	margin-bottom: 24px;
+}
+
+/*________________________*/
+/*barbershop-item*/
+/*gallery*/
+
+.gallery {
+	float:left;
+	width: 460px;
+}
+.image-big{
+	margin-bottom: 20px;
+}
+
+.image-small{
+	margin-bottom:17px;
+}
+.image-small img{
+	margin-right:20px;
+	float: left;
+}
+.image-small img:last-child{
+	margin-right:0;
+}
+/*description*/
+.description{
+	float:right;
+	width:390px;
+}
+.first-row{
+	width: 390px;
+	margin-bottom: 40px;
+}
+.first-row .available{
+	float:left;
+}
+.first-row .article{
+	float:right;
+}
+.item-composition ul{
+	padding:15px;
+}
+
+.image-small img:last-child{
+	margin-right:0px;
+}
+.about{
+	margin-bottom: 40px;
+}
+.buy-item{
+	text-align: left;
+	margin-bottom: 65px;
+}
+.item-composition ul{
+	margin:0;
+	padding:0;
+	padding-left:17px;
+	margin-top: 40px;
+}
+
+/*________________________*/
+/*barberhop-price*/
+.big-title{
+	text-align:center;
+	font-size:48px;
+}
+.left-column{
+	float:left;
+	width:420px;	
+}
+.right-column{
+	float:right;
+	width: 460px;
+}
+.left-column h3{
+	width: 300px;
+	margin-bottom:40px;
+}
+.left-column .brand{
+	margin-bottom:55px;
+}
+.right-column caption{
+	font-size: 24px;
+	line-height: normal;
+	text-align: left;
+	width:200px;
+	margin-bottom: 40px;
+}
+.right-column table{
+	margin-bottom: 125px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
