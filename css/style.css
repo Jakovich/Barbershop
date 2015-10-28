@@ -6,27 +6,27 @@ body{
 	color: #000000;
 	line-height: 24px;
 	text-transform: uppercase;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 }
 h2{
-	margin-top:0px; /*почему нужно задавать здесь 0 отдельно, если не задать - поялвяется сверху отступ, откуда он берется?*/
+	margin-top: 0px;
 	font-size: 30px;
 	line-height: normal;
 }
 h3{
 	font-size: 24px;
 	line-height: normal;
-	margin-top:0;
-	margin-bottom:0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .container{
 	width: 940px;
-	margin: auto; 
+	margin: auto;
 }
 .clearfix{
-	content:'';
+	content: '';
 	display: table;
 	clear: both;
 }
@@ -49,7 +49,7 @@ h3{
 .main-navigation li{
 	display: inline-block;
 	margin-right: 20px;
-	margin-left:20px;
+	margin-left: 20px;
 }
 .user-block{
 	float: right;
@@ -60,25 +60,25 @@ h3{
 
 /*main-footer*/
 .main-footer{
-	padding-top:60px;
-	padding-bottom:40px;
-	margin-top:30px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin-top: 30px;
 }
 .footer-contacts {
-	float:left;
+	float: left;
 	margin-right: 90px;
 	width: 310px;
 }
 .footer-social{
-	float:left;
-	text-align:center;
+	float: left;
+	text-align: center;
 	width: 140px;
-	
+
 }
 .footer-copyright{
-	float:right;
-	width:140px;
-	text-align:center;
+	float: right;
+	width: 140px;
+	text-align: center;
 }
 
 /*________________________*/
@@ -95,17 +95,17 @@ h3{
 }
 .features-item{
 	width: 300px;
-	float:left;
+	float: left;
 	text-align: center;
-	margin-right:20px;
+	margin-right: 20px;
 }
 .features-item:last-child{
-	margin-right:0;
+	margin-right: 0;
 }
 /*index-content*/
 .index-content{
-	margin-bottom:34px;
-	padding:55px 80px;
+	margin-bottom: 34px;
+	padding: 55px 80px;
 }
 .content-column-left{
 	float:left;
@@ -117,10 +117,13 @@ h3{
 	width: 325px;
 	padding-righ: 65px;
 }
+figure{
+	margin-left: 0;
+}
 ul.news-preview{
 	list-style: none;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 }
 
 /*________________________*/
@@ -131,11 +134,11 @@ ul.news-preview{
 	margin-bottom: 60px;
 }
 .breadcrumbs ul{
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 }
 .breadcrumbs li{
-	display:inline-block;
+	display: inline-block;
 	margin-right: 40px;
 }
 
@@ -143,27 +146,27 @@ ul.news-preview{
 /*form*/
 .choice {
 float: left;
-width:220px;
+width: 220px;
 margin-right: 20px;
 }
 fieldset{
-	padding:0;
+	padding: 0;
 	border: none;
 	margin-bottom: 20px;
 }
 label{
-	display:block;
+	display: block;
 	margin-bottom: 20px;
 }
 /*catalog*/
 .catalog-items{
-	float:right;
-	width:700px;
+	float: right;
+	width: 700px;
 
 }
 .catalog-item{
-	float:left;
-	margin-right: 20px; 
+	float: left;
+	margin-right: 20px;
 	margin-bottom: 20px;
 }
 .catalog-item:nth-child(3n){
@@ -199,36 +202,36 @@ label{
 }
 
 .image-small{
-	margin-bottom:17px;
+	margin-bottom: 17px;
 }
 .image-small img{
-	margin-right:20px;
+	margin-right: 20px;
 	float: left;
 }
 .image-small img:last-child{
-	margin-right:0;
+	margin-right: 0;
 }
 /*description*/
 .description{
-	float:right;
-	width:390px;
+	float: right;
+	width: 390px;
 }
 .first-row{
 	width: 390px;
 	margin-bottom: 40px;
 }
 .first-row .available{
-	float:left;
+	float: left;
 }
 .first-row .article{
-	float:right;
+	float: right;
 }
 .item-composition ul{
-	padding:15px;
+	padding: 15px;
 }
 
 .image-small img:last-child{
-	margin-right:0px;
+	margin-right: 0px;
 }
 .about{
 	margin-bottom: 40px;
@@ -238,38 +241,38 @@ label{
 	margin-bottom: 65px;
 }
 .item-composition ul{
-	margin:0;
-	padding:0;
-	padding-left:17px;
+	margin: 0;
+	padding: 0;
+	padding-left: 17px;
 	margin-top: 40px;
 }
 
 /*________________________*/
 /*barberhop-price*/
 .big-title{
-	text-align:center;
-	font-size:48px;
+	text-align: center;
+	font-size: 48px;
 }
 .left-column{
-	float:left;
-	width:420px;	
+	float: left;
+	width: 420px;
 }
 .right-column{
-	float:right;
+	float: right;
 	width: 460px;
 }
 .left-column h3{
 	width: 300px;
-	margin-bottom:40px;
+	margin-bottom: 40px;
 }
 .left-column .brand{
-	margin-bottom:55px;
+	margin-bottom: 55px;
 }
 .right-column caption{
 	font-size: 24px;
 	line-height: normal;
 	text-align: left;
-	width:200px;
+	width: 200px;
 	margin-bottom: 40px;
 }
 .right-column table{
