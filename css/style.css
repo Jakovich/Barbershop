@@ -8,6 +8,7 @@ body{
 	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
+	background: #fbf8f5 url("../img/background_news.jpg");
 }
 h2{
 	margin-top: 0px;
@@ -25,8 +26,12 @@ h3{
 	width: 940px;
 	margin: auto;
 }
-.clearfix{
-	content: '';
+.container a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.clearfix::after{
+	content:"";
 	display: table;
 	clear: both;
 }
@@ -34,9 +39,10 @@ h3{
 /*main-header*/
 .main-header{
 	font-size: 16px;
-	padding: 20px 0;
 	margin-bottom: 55px;
+	background-color: #000000;
 }
+
 .main-navigation{
 	float: left;
 	width: 680px;
@@ -45,102 +51,359 @@ h3{
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	font-size: 0;
 }
 .main-navigation li{
+	font-size: 16px;
 	display: inline-block;
-	margin-right: 20px;
-	margin-left: 20px;
+	vertical-align:top;
+}
+.main-navigation a{
+	padding: 25px 20px;
+	display: block;
+}
+.main-navigation a:hover{
+	background-color:#242424;
+}
+.main-navigation .active a{
+	position: relative;
+}
+.main-navigation .active a:after{
+	content: "";
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	bottom:0px;
+	left:20px;
+	right:20px;
 }
 .user-block{
 	float: right;
-	padding-right: 20px;
-	width: 68px;
-	text-align: right;
+	max-width: 140px;
+	margin:0;
+	padding:0;
 }
-
+.login{
+	display: inline-block;
+	vertical-align: top;
+	padding:25px 20px;
+	padding-left: 50px;
+	position: relative;
+}
+.login::before{
+	position: absolute;
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -162px -106px;
+	left: 25px;
+	top: 28px;
+	opacity: 0.3;
+}
+.login:hover::before{
+	opacity: 1;
+}
+.login:hover{
+	background-color:#242424;	
+}
 /*main-footer*/
 .main-footer{
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 55px;
+	padding-bottom: 30px;
 	margin-top: 30px;
+	color: #ffffff;
+	background: #252525 url("../img/background_footer.jpg");
+}
+.main-footer p{
+	margin:0;
+	margin-bottom: 15px;
 }
 .footer-contacts {
 	float: left;
-	margin-right: 90px;
+	margin-right: 70px;
 	width: 310px;
+}
+.footer-contacts a{
+	text-decoration: underline;
 }
 .footer-social{
 	float: left;
 	text-align: center;
-	width: 140px;
-
+	width: 180px;
 }
 .footer-copyright{
 	float: right;
 	width: 140px;
 	text-align: center;
 }
+.footer-copyright .btn{
+	padding:0;
+	margin:0;
+	width: 140px;
+	height: 43px;
+	display:block;
+	line-height: 43px;
+}
+.footer-copyright .btn:hover{
+	background-color: #ffffff; 
+	color: #000000
+}
+.social-btn{
+	width: 43px;
+	height: 43px;
+	background-color: #000000;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 6px;
+}
+.social-btn:last-child{
+	margin-right: 0;
+}
+.social-btn:hover{
+	background-color: #ffffff;
+}
+.social-btn-vk{
+	background-position: -150px -2px;
+}
+.social-btn-vk:hover{
+	background-position: -152px -46px;
+}
+.social-btn-fb{
+	   background-position: -100px -05px;
+}
+.social-btn-fb:hover{
+	   background-position: -0px -57px;
+}
+.social-btn-inst{
+	background-position: -46px -57px;
+}
+.social-btn-inst:hover{
+	background-position: -97px -57px;
+}
+
 
 /*________________________*/
 /*barbershop-index*/
 /*logo*/
+body.index{
+	background: #070707 url("../img/background_index.jpg") no-repeat center top;
+}
 .logo{
-	width: 380px;
-	margin: auto;
-	margin-bottom: 30px;
+	width: 368px;
+	margin: 0 auto;
+	margin-bottom: 15px;
 }
 /*features*/
 .features-row{
-	margin-bottom: 80px;
+	margin-bottom: 65px;
 }
 .features-item{
 	width: 300px;
 	float: left;
 	text-align: center;
 	margin-right: 20px;
+	color: #f7f4f1;
 }
 .features-item:last-child{
 	margin-right: 0;
 }
+.features-title{
+	position:relative;
+	padding-bottom: 40px;
+	margin-bottom:30px;
+}
+.features-title::after{
+	content:"";
+	position: absolute;
+	width:20px;
+	height:20px;
+	display:block;
+	background-color: #ffffff;
+	left:50%;
+	margin-left: -7px;
+	bottom:0;
+	transform:rotate(45deg);
+}
 /*index-content*/
 .index-content{
+	position: relative;
 	margin-bottom: 34px;
-	padding: 55px 80px;
+	padding: 50px 80px;
+	background: 
+		url("../img/colon_separator.png") no-repeat center,
+		#f7f4f1 url("../img/background_news.jpg");
+}
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 16px;
+	background-color: #000000;
+	width: 140px;
+	height: 43px;
+	line-height: 43px;
+	/*padding: 14px 35px;*/
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+.btn:hover,
+.btn:active {
+	background-color:#663d15;
+}
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn:disabled:hover {
+  background: #000000;
+}
+button{
+	color: #ffffff;
+	font-family: "PT Sans Narrow";
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #000000;
+	padding: 14px 30px;
 }
 .content-column-left{
 	float:left;
-	width: 325px;
+	width: 350px;
 	padding-right:65px;
 }
 .content-column-right{
 	float:right;
-	width: 325px;
-	padding-righ: 65px;
+	width: 300px;
 }
-figure{
-	margin-left: 0;
+.content-column-title{
+	margin:0;
+	margin-bottom: 25px;
 }
 ul.news-preview{
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+.news-preview li{
+	margin-bottom: 25px;
+}
+.news-preview time{
+	text-transform: none;
+}
+.gallery-content{
+	margin: 0;
+	padding:0;
+	height: 164px;
+	width: 286px;
+	border: 7px solid white;
+	background: #cccccc;
+	margin-bottom: 35px;
+}
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+.gallery{
+	padding-top:5px;
+	position: relative;
+	height: 260px;
+}
+.gallery .btn{
+	margin: 0;
+	padding:0;
+	position: absolute;
+}
+.gallery-prev {
+	left: 0;
+}
+.gallery-next{
+	right: 0;
+}
+.index-content p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+.appointment-form input {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 106px;
+	padding: 8px 15px;
+	border: 2px solid #000;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000;
+	background: #f9f6f3;
+	outline: none;
+}
+.appointment-form input:nth-child(2n){
+	margin-right: 0;
+}
+.appointment-form .btn {
+	margin-top:12px;
+	padding:0;
+  	clear: both;
+  	width: 100%;
+	margin-bottom:12px;
+}
+.appointment-form  input:focus {
+	border: 2px solid #663d15;
+}
+.main-contacts a{
+	margin-top: 20px;
+}
+
+
 
 /*________________________*/
-/*barbershop-shop*/
+/*catalog*/
 
 /*breadcrumbs*/
+.main-title{
+	margin:0;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
 .breadcrumbs{
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 }
 .breadcrumbs ul{
-	padding: 0;
-	margin: 0;
+	padding:0;
+	margin:0;
+}
+.breadcrumbs li a{
+	color: #000000;
+}
+.breadcrumbs .active a{
+	color: #b5b3b1;
 }
 .breadcrumbs li{
 	display: inline-block;
 	margin-right: 40px;
+	position: relative;
 }
+
+.breadcrumbs li::after{
+	display: block;
+	position: absolute;
+	content: "";
+	transform: rotate(45deg);
+	top: 10px;
+	right: -25px;
+	width: 7px;
+	height: 7px;
+	background-color: #000000;
+}
+.breadcrumbs li:last-child::after{
+	width: 0;
+	height: 0;
+}
+
 
 /*main container*/
 /*form*/
@@ -152,25 +415,82 @@ margin-right: 20px;
 fieldset{
 	padding: 0;
 	border: none;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+}
+fieldset h3{
+	margin-top:-5px;
+	margin-bottom: 23px;
+}
+.choice input{
+	display: none;
+}
+.choice label{
+	display: block;
+	margin-bottom: 13px;
+	padding-left: 40px;
+	margin-left:0;
+	position: relative;
 }
 label{
 	display: block;
 	margin-bottom: 20px;
+	margin-left: 41px;
+	position: relative;
 }
-/*catalog*/
+label:hover{
+	color:#663d15;
+}
+.choice label::before{
+	content:"";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top:0;
+	left:0px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-position: -15px -15px;
+}
+.choice input[type="radio"] + label::before{
+	background-position: -57px -118px;
+}
+.choice input[type="radio"]:checked + label::before{
+	background-position: -107px -118px;
+}
+.choice input[type="checkbox"]:checked + label::before{
+background-position: -65px -15px;
+}
+.choice .btn{
+	padding: 0;
+	width: 112px;
+	margin-top: 35px;
+}
+
+/*items*/
 .catalog-items{
 	float: right;
 	width: 700px;
-
 }
 .catalog-item{
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	width: 220px;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 0 10px -5px black;
+	-moz-box-shadow: 0 0 10px -5px black;
+	box-shadow: 0 0 10px -5px black;
 }
 .catalog-item:nth-child(3n){
 	margin-right: 0;
+}
+.title-item{
+	padding: 0 14px;
+	background-color: #ffffff;
 }
 .title-item a{
 	text-decoration: none;
@@ -178,27 +498,79 @@ label{
 }
 .title-item span{
 	display:block;
+	margin:0;
+	padding:0;
+}
+.title-item .name-item{
+	text-transform: none;
+	margin-top:-2px;
 }
 .buy-item{
+	margin-top: 5px;
 	text-align: center;
+	background-color: #ffffff;
+	font-size:0;
 }
 .price, .btn-buy{
+	padding: 0;
+	margin:0;
 	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+}
+.btn-buy{
+	width: 78px;
+	height:43px;
+	text-align: center;
+	line-height: 43px;
+}
+.price{
+	width: 109px;
+	height:43px;
+	text-align: center;
+	background-color: #e5e5e5;
+	line-height: 43px;
 }
 .paginator{
-	margin-bottom: 24px;
+	padding-top: 35px;
+	clear: both;
+	font-size: 0;
+	margin-left: 240px;
+	margin-bottom: 15px;
+}
+.paginator a{
+	display: inline-block;
+	width: 44px;
+	font-size: 14px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #000000;
+	margin-right: 6px;
+}
+.paginator a:hover{
+	background-color: #663d15;
+}
+.paginator a.current{
+	background-color: #ffffff;
+	color: #000000;
 }
 
 /*________________________*/
 /*barbershop-item*/
 /*gallery*/
-
-.gallery {
+.item-title{
+	margin-top: -5px;
+	margin-bottom: 15px;
+}
+.gallery-of-item {
 	float:left;
 	width: 460px;
 }
+
 .image-big{
 	margin-bottom: 20px;
+	box-shadow: 0 0 20px -5px black;
 }
 
 .image-small{
@@ -207,6 +579,7 @@ label{
 .image-small img{
 	margin-right: 20px;
 	float: left;
+	box-shadow: 0 0 20px -5px black;
 }
 .image-small img:last-child{
 	margin-right: 0;
@@ -218,13 +591,15 @@ label{
 }
 .first-row{
 	width: 390px;
-	margin-bottom: 40px;
+	margin-top:20px;
+	margin-bottom: 30px;
 }
 .first-row .available{
 	float: left;
 }
 .first-row .article{
 	float: right;
+	color: #aeaeae;
 }
 .item-composition ul{
 	padding: 15px;
@@ -234,28 +609,76 @@ label{
 	margin-right: 0px;
 }
 .about{
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
-.buy-item{
+.description .buy-item{
+	
 	text-align: left;
-	margin-bottom: 65px;
+	background: none;
+	margin-bottom: 60px;
 }
+.description .price {
+	margin-left: 0;
+}
+
 .item-composition ul{
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	padding-left: 17px;
-	margin-top: 40px;
+	margin-top: 30px;
+}
+.item-composition li{
+	position:relative;
+}
+.item-composition li::before{
+	content:"";
+	width: 7px;
+	height: 7px;
+	background-color: #000000;
+	display:block;
+	transform: rotate(45deg);
+	position: absolute;
+	left:-17px;
+	top: 8px;
+	
 }
 
 /*________________________*/
 /*barberhop-price*/
+.price-title{
+	margin-top:-5px;
+	margin-bottom: 20px;
+}
 .big-title{
-	text-align: center;
+	padding:0;
+	margin:0;
+	margin-top:-15px;
 	font-size: 48px;
+	margin-bottom: 50px;
+}
+.big-title::before{
+	content:"";
+	display:inline-block;
+	vertical-align: middle;
+	width: 160px;
+	height: 2px;
+	background-color: #000000;
+	margin-right:20px;
+}
+.big-title::after{
+	content:"";
+	display:inline-block;
+	vertical-align: middle;
+	width: 160px;
+	height: 2px;
+	background-color: #000000;
+	margin-left:20px;
 }
 .left-column{
 	float: left;
-	width: 420px;
+	width: 390px;
+	margin-bottom:30px;
 }
 .right-column{
 	float: right;
@@ -263,22 +686,142 @@ label{
 }
 .left-column h3{
 	width: 300px;
-	margin-bottom: 40px;
+	margin-bottom: 29px;
 }
 .left-column .brand{
 	margin-bottom: 55px;
 }
+.brand ul{
+	list-style:none;
+	padding-left: 20px;
+}
+
+.brand li{
+	margin-bottom: 13px;
+	position:relative;
+}
+.brand li::before{
+	content:"";
+	width: 7px;
+	height: 7px;
+	background-color: #000000;
+	display:block;
+	transform: rotate(45deg);
+	position: absolute;
+	left:-20px;
+	top: 8px;
+}
+
 .right-column caption{
 	font-size: 24px;
 	line-height: normal;
 	text-align: left;
 	width: 200px;
-	margin-bottom: 40px;
-}
-.right-column table{
-	margin-bottom: 125px;
+	margin-bottom: 30px;
 }
 
+.right-column table{
+	margin-bottom: 117px;
+	border: 2px solid #000000;
+	border-collapse: collapse;
+}
+.right-column td{
+	border: 2px solid #000000;
+	padding-left: 17px;
+	padding-right: 17px;
+	width: 200px;
+	height: 38px;
+	vertical-align: middle;
+}
+.right-column td:nth-child(2n){
+	text-align: center;
+}
+.adv-block{
+	width: 390px;
+}
+
+
+/*sprite*/
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -15px -15px;
+}
+
+.sprite-icon_checkbox_checked {
+    width: 20px;
+    height: 20px;
+    background-position: -65px -15px;
+}
+
+.sprite-icon_fb {
+    width: 12px;
+    height: 22px;
+    background-position: -115px -15px;
+}
+
+.sprite-icon_fb_hover {
+    width: 12px;
+    height: 22px;
+    background-position: -15px -67px;
+}
+
+.sprite-icon_inst {
+    width: 21px;
+    height: 21px;
+    background-position: -57px -67px;
+}
+
+.sprite-icon_inst_hover {
+    width: 21px;
+    height: 21px;
+    background-position: -108px -67px;
+}
+
+.sprite-icon_radio {
+    width: 20px;
+    height: 20px;
+    background-position: -57px -118px;
+}
+
+.sprite-icon_radio_checked {
+    width: 20px;
+    height: 20px;
+    background-position: -107px -118px;
+}
+
+.sprite-icon_vk {
+    width: 25px;
+    height: 16px;
+    background-position: -157px -15px;
+}
+
+.sprite-icon_vk_hover {
+    width: 25px;
+    height: 16px;
+    background-position: -159px -61px;
+}
+
+.sprite-lcon_login {
+    width: 18px;
+    height: 16px;
+    background-position: -159px -107px;
+}
+
+
+
+/*<i class="sprite sprite-icon_checkbox"></i>
+<i class="sprite sprite-icon_checkbox_checked"></i>
+<i class="sprite sprite-icon_fb"></i>
+<i class="sprite sprite-icon_inst"></i>
+<i class="sprite sprite-icon_vk"></i>
+<i class="sprite sprite-lcon_login"></i>*/
 
 
 
