@@ -168,7 +168,7 @@ h3{
 	background-position: -150px -2px;
 }
 .social-btn-vk:hover{
-	background-position: -152px -46px;
+	background-position: -152px -48px;
 }
 .social-btn-fb{
 	   background-position: -100px -05px;
@@ -481,8 +481,8 @@ background-position: -65px -15px;
 	width: 220px;
 	padding-bottom: 15px;
 	background-color: #ffffff;
-	-webkit-box-shadow: 0 0 10px -5px black;
-	-moz-box-shadow: 0 0 10px -5px black;
+	-webkit-box-shadow: 0 0 20px -5px black;
+	-moz-box-shadow: 0 0 20px -5px black;
 	box-shadow: 0 0 10px -5px black;
 }
 .catalog-item:nth-child(3n){
@@ -568,6 +568,7 @@ background-position: -65px -15px;
 }
 
 .image-big{
+	height: 498px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 20px -5px black;
 }
