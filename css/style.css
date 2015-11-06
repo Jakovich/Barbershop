@@ -1,6 +1,6 @@
 /*general*/
 body{
-	font-family: "PT Sans Narrow";
+	font-family: "PT Sans Narrow", "Arial", sans-serif ;
 	font-weight: bold;
 	font-size: 14px;
 	color: #000000;
@@ -96,7 +96,7 @@ h3{
 	width: 18px;
 	height: 18px;
 	background: url("../img/sprite.png") no-repeat;
-	background-position: -162px -106px;
+	background-position:  -197px -65px;
 	left: 25px;
 	top: 28px;
 	opacity: 0.3;
@@ -156,6 +156,7 @@ h3{
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 6px;
 }
 .social-btn:last-child{
@@ -164,23 +165,24 @@ h3{
 .social-btn:hover{
 	background-color: #ffffff;
 }
+
 .social-btn-vk{
-	background-position: -150px -2px;
+	background-position: -159px -100px;
 }
 .social-btn-vk:hover{
-	background-position: -152px -48px;
+	background-position: -159px -146px;
 }
 .social-btn-fb{
-	   background-position: -100px -05px;
+	   background-position: -53px -55px;
 }
 .social-btn-fb:hover{
-	   background-position: -0px -57px;
+	   background-position: -95px -55px;
 }
 .social-btn-inst{
-	background-position: -46px -57px;
+	background-position: -4px -108px;
 }
 .social-btn-inst:hover{
-	background-position: -97px -57px;
+	background-position: -55px -108px;
 }
 
 
@@ -263,7 +265,7 @@ body.index{
 }
 button{
 	color: #ffffff;
-	font-family: "PT Sans Narrow";
+	font-family: "PT Sans Narrow", "Arial", sans-serif ;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
@@ -334,7 +336,7 @@ ul.news-preview{
 	width: 106px;
 	padding: 8px 15px;
 	border: 2px solid #000;
-	font-family: "PT Sans Narrow", sans-serif;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -384,6 +386,7 @@ ul.news-preview{
 }
 .breadcrumbs li{
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 40px;
 	position: relative;
 }
@@ -452,16 +455,16 @@ label:hover{
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-position: -15px -15px;
+	background-position: -68px -15px;
 }
 .choice input[type="radio"] + label::before{
-	background-position: -57px -118px;
+	background-position: -117px -117px;
 }
 .choice input[type="radio"]:checked + label::before{
-	background-position: -107px -118px;
+	background-position: -168px -15px;
 }
 .choice input[type="checkbox"]:checked + label::before{
-background-position: -65px -15px;
+background-position: -118px -15px;
 }
 .choice .btn{
 	padding: 0;
@@ -540,6 +543,7 @@ background-position: -65px -15px;
 }
 .paginator a{
 	display: inline-block;
+	vertical-align: top;
 	width: 44px;
 	font-size: 14px;
 	height: 44px;
@@ -740,89 +744,130 @@ background-position: -65px -15px;
 	width: 390px;
 }
 
+/*_______________________*/
 
-/*sprite*/
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+/*Modal windows*/
+
+/*Login-form*/
+.modal-window{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 300px;
+	margin-top: 120px;
+	margin-left: -230px;
+	padding: 45px 80px;
+	color: black;
+	background: #fbf8f5 url("../img/background_news.jpg");
+	box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+.modal-window-show{
+	display: block;
+}
+.modal-close{
+	position: absolute; 
+	display: block;
+	width: 23px;
+    	height: 23px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -15px -15px;
+	top:0;
+	right:-35px;
+	cursor: pointer;
+}
+.modal-window input[name="login"]{
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 250px -194px;
+}
+.modal-window input[name="password"]{
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 250px -230px;
+	margin-bottom: 15px;
+}
+.modal-content-title{
+	margin-top:0;
+	margin-bottom: 15px;;
+}
+.modal-exp{
+	margin:0;
+	margin-bottom: 10px;
+}
+.modal-form input{
+	display: block;
+	padding: 10px 15px;
+	padding-right: 40px;
+	width: 241px;;
+	border: 2px solid #000000;
+	margin-bottom: 10px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000000;
+	outline: none;
+	background: #f9f6f3;
+}
+.modal-form input:focus{
+	border: 2px solid #663d15;
+}
+.modal-form input[type="checkbox"]{
+	display: none;
+}
+.modal-form label{
+	padding-left: 30px;
+	margin:0;
+	margin-top:0;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+.modal-form label::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left:0;
+	display: block;
+	width: 20px;
+	height: 20px; 
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -68px -15px;
+}
+.modal-form input[type="checkbox"]:checked + label:before{
+	background-position: -118px -15px;
+}
+a.forget-password{
+	color: #000000;
+	float: right;
 }
 
-.sprite-icon_checkbox {
-    width: 20px;
-    height: 20px;
-    background-position: -15px -15px;
+.modal-form button{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	outline: none;
+	border: none;
 }
 
-.sprite-icon_checkbox_checked {
-    width: 20px;
-    height: 20px;
-    background-position: -65px -15px;
+/*Map*/
+.modal-window-map {
+  display: none;  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 766px;
+  height: 561px;
+  margin-left: -390px;
+  margin-top: -287.5px;
+  border: 7px solid white;
+  background: #e9e5dc url("../img/map.jpg");
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
 }
-
-.sprite-icon_fb {
-    width: 12px;
-    height: 22px;
-    background-position: -115px -15px;
-}
-
-.sprite-icon_fb_hover {
-    width: 12px;
-    height: 22px;
-    background-position: -15px -67px;
-}
-
-.sprite-icon_inst {
-    width: 21px;
-    height: 21px;
-    background-position: -57px -67px;
-}
-
-.sprite-icon_inst_hover {
-    width: 21px;
-    height: 21px;
-    background-position: -108px -67px;
-}
-
-.sprite-icon_radio {
-    width: 20px;
-    height: 20px;
-    background-position: -57px -118px;
-}
-
-.sprite-icon_radio_checked {
-    width: 20px;
-    height: 20px;
-    background-position: -107px -118px;
-}
-
-.sprite-icon_vk {
-    width: 25px;
-    height: 16px;
-    background-position: -157px -15px;
-}
-
-.sprite-icon_vk_hover {
-    width: 25px;
-    height: 16px;
-    background-position: -159px -61px;
-}
-
-.sprite-lcon_login {
-    width: 18px;
-    height: 16px;
-    background-position: -159px -107px;
-}
-
-
-
-/*<i class="sprite sprite-icon_checkbox"></i>
-<i class="sprite sprite-icon_checkbox_checked"></i>
-<i class="sprite sprite-icon_fb"></i>
-<i class="sprite sprite-icon_inst"></i>
-<i class="sprite sprite-icon_vk"></i>
-<i class="sprite sprite-lcon_login"></i>*/
-
 
 
 
