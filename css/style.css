@@ -446,8 +446,6 @@ label:hover{
 .choice label::before{
 	content:"";
 	position: absolute;
-	width: 20px;
-	height: 20px;
 	top:0;
 	left:0px;
 	background-image: url("../img/sprite.png");
@@ -819,7 +817,6 @@ background-position: -118px -15px;
 .modal-form label{
 	padding-left: 30px;
 	margin:0;
-	margin-top:0;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
